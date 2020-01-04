@@ -11,11 +11,11 @@ import pers.masteryourself.study.distributed.serializable.jdk.Serializer;
  * Description : 描述
  * @date : 2020/1/4 14:11
  */
-public class JsonSerializerTest {
+public class FastJsonSerializerTest {
 
     @Test
     public void testXmlSerializer() throws Exception {
-        Serializer serializer = new JsonSerializer();
+        Serializer serializer = new FastJsonSerializer();
         User user = new User();
         user.setId(998L);
         user.setName("masteryourself");

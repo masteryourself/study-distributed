@@ -11,7 +11,7 @@ import pers.masteryourself.study.distributed.serializable.jdk.Serializer;
  * Description : 描述
  * @date : 2020/1/4 14:08
  */
-public class JsonSerializer implements Serializer {
+public class FastJsonSerializer implements Serializer {
 
     @Override
     public <T> byte[] serialize(T obj) throws Exception {
