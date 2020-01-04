@@ -17,6 +17,7 @@
         <module>serializable-xml</module>
         <module>serializable-json</module>
         <module>serializable-api</module>
+        <module>serializable-protobuf</module>
     </modules>
 
 </project>
