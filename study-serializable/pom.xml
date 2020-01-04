@@ -18,6 +18,7 @@
         <module>serializable-json</module>
         <module>serializable-api</module>
         <module>serializable-protobuf</module>
+        <module>serializable-hessian</module>
     </modules>
 
 </project>
