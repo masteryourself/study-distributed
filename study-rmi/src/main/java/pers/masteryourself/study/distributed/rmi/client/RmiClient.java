@@ -15,7 +15,9 @@ import java.rmi.Naming;
 public class RmiClient {
 
     public static void main(String[] args) throws Exception {
+        // 客户端获取服务端 Registry 代理
         OrderFacade orderFacade = (OrderFacade) Naming.lookup("rmi://localhost:8888/order");
+        // orderFacade 实际上代理类，被 java.rmi.server.RemoteObjectInvocationHandler.invoke 拦截
         System.out.println(orderFacade.doOrder("masteryourself"));
     }
 

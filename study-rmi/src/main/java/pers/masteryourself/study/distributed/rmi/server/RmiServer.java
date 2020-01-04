@@ -16,7 +16,9 @@ import java.rmi.registry.LocateRegistry;
 public class RmiServer {
 
     public static void main(String[] args) throws Exception {
+        // 发布远程服务
         OrderFacade orderFacade = new OrderFacadeImpl();
+        // 服务端启动 Registry 服务
         LocateRegistry.createRegistry(8888);
         Naming.bind("rmi://localhost:8888/order", orderFacade);
         System.out.println("rmi-server 启动");
