@@ -1,4 +1,4 @@
-package pers.mangseng.mq.activemq.topic.consumer;
+package pers.mangseng.mq.activemq.topic.temporary.consumer;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -12,7 +12,7 @@ import javax.jms.*;
  * Description : 描述
  * @date : 2020/1/10 14:24
  */
-public class TopicConsumer1 {
+public class TemporaryTopicConsumer1 {
 
     public static void main(String[] args) throws Exception {
         //创建一个 JMS connection factory
@@ -24,7 +24,7 @@ public class TopicConsumer1 {
         //通过 connection 创建 JMS session
         Session session = connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);
         //创建 JMS destination
-        Destination destination = session.createTopic("no-persistence-topic");
+        Destination destination = session.createTopic("temporary-topic");
         MessageConsumer consumer = session.createConsumer(destination);
         TextMessage message = (TextMessage) consumer.receive();
         //提交事务
