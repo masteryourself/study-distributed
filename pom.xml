@@ -11,6 +11,7 @@
     <modules>
         <module>study-serializable</module>
         <module>study-rmi</module>
+        <module>study-mq</module>
     </modules>
 
     <dependencyManagement>
