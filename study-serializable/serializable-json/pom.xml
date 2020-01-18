@@ -18,11 +18,6 @@
             <version>1.2.46</version>
         </dependency>
         <dependency>
-            <groupId>pers.masteryourself.study</groupId>
-            <artifactId>serializable-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>

@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>study-activemq</module>
+        <module>study-kafka</module>
+        <module>study-rabbitmq</module>
     </modules>
 
 

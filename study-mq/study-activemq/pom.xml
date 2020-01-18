@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>activemq-api</module>
+        <module>activemq-spring</module>
+        <module>activemq-spring-boot</module>
     </modules>
 
 

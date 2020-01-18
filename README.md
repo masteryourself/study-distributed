@@ -4,11 +4,20 @@ distributed system study
 ## project priview
 - study-mq
   - study-activemq
+    - activemq-api
+    - activemq-spring
+    - activemq-spring-boot
+  - study-kafka
+    - kafka-api
+    - kafka-spring
+    - kafka-spring-boot
 - study-rpc
+  - study-dubbo
   - study-rmi
 - study-serializable
-  - study-serializable-jdk
-  - study-serializable-xml
-  - study-serializable-json
-  - study-serializable-protobuf
-  - study-serializable-hessian
+  - serializable-hessian
+  - serializable-jdk
+  - serializable-json
+  - serializable-protobuf
+  - serializable-xml
+  
