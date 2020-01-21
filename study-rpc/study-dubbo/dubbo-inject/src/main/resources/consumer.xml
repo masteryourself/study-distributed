@@ -1,0 +1,22 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="demo-consumer">
+        <dubbo:parameter key="qos.enable" value="false"/>
+    </dubbo:application>
+
+    <!-- 配置中心地址 -->
+    <dubbo:config-center address="zookeeper://127.0.0.1:2181"/>
+    <!-- 注册中心地址：如果在配置中心统一配置，则此处可以省略 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!-- 元数据中心地址：如果在配置中心统一配置，则此处可以省略 -->
+    <dubbo:metadata-report address="zookeeper://127.0.0.1:2181"/>
+
+    <!-- 引用服务 -->
+    <dubbo:reference id="demoService" interface="pers.masteryourself.study.rpc.dubbo.inject.api.DemoService"
+                     timeout="3000"/>
+
+</beans>

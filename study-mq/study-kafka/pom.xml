@@ -11,6 +11,7 @@
 
     <artifactId>study-kafka</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>kafka-api</module>
         <module>kafka-spring</module>

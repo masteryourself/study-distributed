@@ -11,6 +11,7 @@
 
     <artifactId>study-mq</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>study-activemq</module>
         <module>study-kafka</module>

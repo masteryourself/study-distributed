@@ -11,6 +11,7 @@
 
     <artifactId>study-rabbitmq</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>rabbitmq-api</module>
         <module>rabbitmq-spring</module>

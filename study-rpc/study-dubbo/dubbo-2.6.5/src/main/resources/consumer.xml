@@ -1,0 +1,19 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application name="demo-consumer">
+        <dubbo:parameter key="qos.enable" value="false"/>
+    </dubbo:application>
+
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <!-- failover 失败自动切换，当出现失败，重试其它服务器，默认配置 -->
+    <!--<dubbo:reference id="demoService" check="false" interface="pers.masteryourself.study.dubbo.api.DemoService" cluster="failover" retries="2"/>-->
+
+    <!-- failfast 快速失败，只发起一次调用，失败立即报错 -->
+    <dubbo:reference id="demoService" check="false" interface="pers.masteryourself.study.rpc.dubbo.v265.api.DemoService" cluster="failfast"/>
+
+</beans>

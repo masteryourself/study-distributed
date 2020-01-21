@@ -11,6 +11,7 @@
 
     <artifactId>study-activemq</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>activemq-api</module>
         <module>activemq-spring</module>

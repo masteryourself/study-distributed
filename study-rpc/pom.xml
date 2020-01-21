@@ -11,6 +11,7 @@
 
     <artifactId>study-rpc</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>study-rmi</module>
         <module>study-dubbo</module>
