@@ -2,6 +2,8 @@
 
 - 序列化知识学习
 
+## project preview
+
 - serializable-hessian: hession 序列化
 
 - serializable-jdk: jdk 自带的序列化
