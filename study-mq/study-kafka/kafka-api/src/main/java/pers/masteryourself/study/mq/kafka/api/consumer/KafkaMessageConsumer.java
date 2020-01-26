@@ -18,14 +18,14 @@ import java.util.Properties;
  * Description : 描述
  * @date : 2020/1/25 21:15
  */
-public class MessageConsumer {
+public class KafkaMessageConsumer {
 
     public static void main(String[] args) {
         Properties properties = new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 "192.168.89.210:9092,192.168.89.220:9092,192.168.89.230:9092");
         // 消费组 ID
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "MessageConsumer");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG, "KafkaMessageConsumer");
         // 开启自动确认
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true");
         // 每一秒钟确认一次

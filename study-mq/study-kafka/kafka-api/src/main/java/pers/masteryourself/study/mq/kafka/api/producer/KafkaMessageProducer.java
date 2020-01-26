@@ -17,13 +17,13 @@ import java.util.concurrent.TimeUnit;
  * Description : 描述
  * @date : 2020/1/25 21:15
  */
-public class MessageProducer {
+public class KafkaMessageProducer {
 
     public static void main(String[] args) throws Exception {
         Properties properties = new Properties();
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 "192.168.89.210:9092,192.168.89.220:9092,192.168.89.230:9092");
-        properties.put(ProducerConfig.CLIENT_ID_CONFIG, "MessageProducer");
+        properties.put(ProducerConfig.CLIENT_ID_CONFIG, "KafkaMessageProducer");
         // 需要 ISR 中的所有副本确认
         properties.put(ProducerConfig.ACKS_CONFIG, "-1");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,

@@ -2,11 +2,6 @@ package pers.masteryourself.study.serializable.xml;
 
 import lombok.Data;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
-
 /**
  * @author : masteryourself
  * @version : 1.0
