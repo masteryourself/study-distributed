@@ -34,7 +34,8 @@ public class KafkaMessageProducer {
         for (int i = 0; i < 50; i++) {
             String message = "message:" + i;
             System.out.println("message send: " + message);
-            producer.send(new ProducerRecord<>("topic_test", message));
+            //producer.send(new ProducerRecord<>("topic_test", message));
+            producer.send(new ProducerRecord<>("topic_partition", message));
             TimeUnit.MILLISECONDS.sleep(500);
         }
     }
