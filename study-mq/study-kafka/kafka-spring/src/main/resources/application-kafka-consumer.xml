@@ -22,7 +22,7 @@
     </bean>
 
     <bean id="containerProperties" class="org.springframework.kafka.listener.config.ContainerProperties">
-        <constructor-arg name="topics" value="topic_spring_test"/>
+        <constructor-arg name="topics" value="spring_topic_test"/>
         <property name="messageListener" ref="kafkaMessageListener"/>
     </bean>
 

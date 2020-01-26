@@ -19,7 +19,7 @@ public class SpringKafkaMessageProducer {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:application-kafka-producer.xml");
         KafkaTemplate kafkaTemplate = applicationContext.getBean(KafkaTemplate.class);
         for (int i = 0; i < 10; i++) {
-            kafkaTemplate.send("topic_spring_test", "topic_spring_test: " + i);
+            kafkaTemplate.send("spring_topic_test", "spring_topic_test: " + i);
             TimeUnit.MILLISECONDS.sleep(500);
         }
     }
