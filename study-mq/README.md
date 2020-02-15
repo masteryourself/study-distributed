@@ -1,6 +1,6 @@
 ## study-rpc
 
-- MQ 消息中间件
+- MQ 消息中间件学习
 
 ## project preview
 

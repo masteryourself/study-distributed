@@ -1,6 +1,6 @@
 ## study-rpc
 
-- rpc 框架学习
+- RPC 框架学习
 
 ## project preview
 
