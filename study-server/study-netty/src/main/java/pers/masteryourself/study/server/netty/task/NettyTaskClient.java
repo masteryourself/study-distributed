@@ -34,7 +34,7 @@ public class NettyTaskClient {
                     });
             System.out.println("客户端 ready ......");
             // 客户端连接服务器端地址，返回一个 channelFuture
-            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 6666).sync();
+            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 7777).sync();
             // 对关闭通道进行监听
             channelFuture.channel().closeFuture().sync();
         } finally {

@@ -46,7 +46,7 @@ public class NettyTaskServer {
                     });
             System.out.println("服务器 ready ......");
             // 启动服务器并绑定端口，返回一个 channelFuture
-            ChannelFuture channelFuture = serverBootstrap.bind(6666).sync();
+            ChannelFuture channelFuture = serverBootstrap.bind(7777).sync();
             // 对关闭通道进行监听
             channelFuture.channel().closeFuture().sync();
         } finally {

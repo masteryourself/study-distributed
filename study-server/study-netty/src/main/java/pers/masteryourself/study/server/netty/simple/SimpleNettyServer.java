@@ -44,13 +44,13 @@ public class SimpleNettyServer {
                     });
             System.out.println("服务器 ready ......");
             // 启动服务器并绑定端口，返回一个 channelFuture
-            ChannelFuture channelFuture = serverBootstrap.bind(6666).sync();
+            ChannelFuture channelFuture = serverBootstrap.bind(7777).sync();
             // 添加监听器
             channelFuture.addListener((ChannelFutureListener) future -> {
                 if (channelFuture.isSuccess()) {
-                    System.out.println("服务器监听 6666 端口成功");
+                    System.out.println("服务器监听 7777 端口成功");
                 } else {
-                    System.out.println("服务器监听 6666 端口失败");
+                    System.out.println("服务器监听 7777 端口失败");
                 }
             });
             // 对关闭通道进行监听

@@ -40,7 +40,7 @@ public class GroupChatClient {
                         }
                     });
             // 客户端连接服务器端地址，返回一个 channelFuture
-            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 6666).sync();
+            ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 7777).sync();
             Channel channel = channelFuture.channel();
             System.out.printf("******************** %s ********************\n", channel.localAddress().toString().substring(1));
             Scanner scanner = new Scanner(System.in);
