@@ -28,6 +28,9 @@ public class NettySimpleServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         System.out.println("服务器读取数据的线程：" + Thread.currentThread().getName());
         Channel channel = ctx.channel();
+        // 本质上是一个双向链表，有进站出站，pipeline 包含 channel，channel 也包含 pipeline
+        // channel.pipeline()
+        // pipeline.channel()
         ByteBuf buf = (ByteBuf) msg;
         System.out.printf("客户端 [%s] 发送的数据是：%s\n", channel.remoteAddress().toString().substring(1), buf.toString(CharsetUtil.UTF_8));
     }
