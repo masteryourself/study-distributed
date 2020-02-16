@@ -5,7 +5,10 @@ import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.channel.group.ChannelGroup;
+import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.CharsetUtil;
+import io.netty.util.concurrent.GlobalEventExecutor;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -22,15 +25,30 @@ import java.util.concurrent.TimeUnit;
 public class NettyTaskServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
+     * 存储所有 channel
+     */
+    private static ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+
+    /**
      * 在构造函数中，初始化一个定时任务，每隔 5s 推送一条消息
      */
     public NettyTaskServerHandler() {
         ScheduledExecutorService pool = Executors.newSingleThreadScheduledExecutor();
-        pool.scheduleAtFixedRate(() -> NettyTaskServer.channels.forEach(socketChannel -> {
-            Channel channel = socketChannel.pipeline().channel();
-            System.out.println(channel.hashCode());
-            channel.writeAndFlush(Unpooled.copiedBuffer("非当前 Reactor 线程调用 Channel 方法完成 1次/5s 的消息推送", CharsetUtil.UTF_8));
-        }), 0, 5, TimeUnit.SECONDS);
+        pool.scheduleAtFixedRate(() -> channels.writeAndFlush(
+                Unpooled.copiedBuffer("非当前 Reactor 线程调用 Channel 方法完成 1次/5s 的消息推送", CharsetUtil.UTF_8))
+                , 0, 5, TimeUnit.SECONDS);
+    }
+
+    /**
+     * 表示连接建立，一旦连接，第一个被执行
+     *
+     * @param ctx
+     * @throws Exception
+     */
+    @Override
+    public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
+        // 每次来一个客户端连接，都会调用此方法，所以缓存所有的 channel
+        channels.add(ctx.channel());
     }
 
     /**

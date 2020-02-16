@@ -4,12 +4,12 @@ import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
+import io.netty.channel.group.ChannelGroup;
+import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-
-import java.util.ArrayList;
-import java.util.List;
+import io.netty.util.concurrent.GlobalEventExecutor;
 
 /**
  * @author : masteryourself
@@ -20,8 +20,6 @@ import java.util.List;
  * @date : 2020/2/16 1:08
  */
 public class NettyTaskServer {
-
-    public static List<SocketChannel> channels = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
         // 创建 boosGroup，只负责连接请求，子线程 NioEventLoop 个数默认是 cpu 核数 * 2
@@ -43,8 +41,6 @@ public class NettyTaskServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            // 每次来一个客户端连接，都会调用此方法，所以缓存所有的 socketChannel
-                            channels.add(socketChannel);
                             socketChannel.pipeline().addLast(new NettyTaskServerHandler());
                         }
                     });
