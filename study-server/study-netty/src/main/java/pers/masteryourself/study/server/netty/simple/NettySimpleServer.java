@@ -2,6 +2,7 @@ package pers.masteryourself.study.server.netty.simple;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -44,6 +45,14 @@ public class NettySimpleServer {
             System.out.println("服务器 ready ......");
             // 启动服务器并绑定端口，返回一个 channelFuture
             ChannelFuture channelFuture = serverBootstrap.bind(6666).sync();
+            // 添加监听器
+            channelFuture.addListener((ChannelFutureListener) future -> {
+                if (channelFuture.isSuccess()) {
+                    System.out.println("服务器监听 6666 端口成功");
+                } else {
+                    System.out.println("服务器监听 6666 端口失败");
+                }
+            });
             // 对关闭通道进行监听
             channelFuture.channel().closeFuture().sync();
         } finally {
