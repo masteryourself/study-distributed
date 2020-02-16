@@ -14,10 +14,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettySimpleServer
+ * Description : SimpleNettyServer
  * @date : 2020/2/16 1:08
  */
-public class NettySimpleServer {
+public class SimpleNettyServer {
 
     public static void main(String[] args) throws Exception {
         // 创建 boosGroup，只负责连接请求，子线程 NioEventLoop 个数默认是 cpu 核数 * 2
@@ -39,7 +39,7 @@ public class NettySimpleServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new NettySimpleServerHandler());
+                            socketChannel.pipeline().addLast(new SimpleNettyServerHandler());
                         }
                     });
             System.out.println("服务器 ready ......");

@@ -12,10 +12,10 @@ import io.netty.util.CharsetUtil;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettySimpleClientHandler
+ * Description : SimpleNettyClientHandler
  * @date : 2020/2/16 1:08
  */
-public class NettySimpleClientHandler extends ChannelInboundHandlerAdapter {
+public class SimpleNettyClientHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 当通道就绪会触发该方法

@@ -11,10 +11,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettyHttpServer
+ * Description : HttpServer
  * @date : 2020/2/16 11:15
  */
-public class NettyHttpServer {
+public class HttpServer {
 
     public static void main(String[] args) throws Exception {
         // 创建 boosGroup，只负责连接请求，子线程 NioEventLoop 个数默认是 cpu 核数 * 2
@@ -33,7 +33,7 @@ public class NettyHttpServer {
                     // 设置保持活动连接状态
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     // 添加 Handler 处理器
-                    .childHandler(new NettyHttpChannelInitializer());
+                    .childHandler(new HttpChannelInitializer());
             System.out.println("http server ready ......");
             // 启动服务器并绑定端口，返回一个 channelFuture
             ChannelFuture channelFuture = serverBootstrap.bind(6666).sync();

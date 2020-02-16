@@ -15,7 +15,7 @@ import io.netty.util.CharsetUtil;
  * Description : handler 处理器
  * @date : 2020/2/16 1:08
  */
-public class NettySimpleServerHandler extends ChannelInboundHandlerAdapter {
+public class SimpleNettyServerHandler extends ChannelInboundHandlerAdapter {
 
     /**
      * 读取数据事件
@@ -62,4 +62,5 @@ public class NettySimpleServerHandler extends ChannelInboundHandlerAdapter {
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
         super.handlerAdded(ctx);
     }
+
 }

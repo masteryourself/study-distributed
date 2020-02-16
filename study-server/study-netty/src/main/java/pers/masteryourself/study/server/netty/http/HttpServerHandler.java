@@ -15,10 +15,10 @@ import java.net.URI;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettyHttpServerHandler
+ * Description : HttpServerHandler
  * @date : 2020/2/16 11:15
  */
-public class NettyHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
+public class HttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {

@@ -12,10 +12,10 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettySimpleClient
+ * Description : SimpleNettyClient
  * @date : 2020/2/16 1:08
  */
-public class NettySimpleClient {
+public class SimpleNettyClient {
 
     public static void main(String[] args) throws Exception {
         NioEventLoopGroup group = new NioEventLoopGroup();
@@ -29,7 +29,7 @@ public class NettySimpleClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new NettySimpleClientHandler());
+                            socketChannel.pipeline().addLast(new SimpleNettyClientHandler());
                         }
                     });
             System.out.println("客户端 ready ......");
