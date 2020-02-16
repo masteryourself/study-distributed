@@ -7,6 +7,7 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
 
@@ -39,7 +40,7 @@ public class HeartBeatServer {
                     // 设置保持活动连接状态
                     .childOption(ChannelOption.SO_KEEPALIVE, true)
                     // boosGroup 的 handler，日志记录
-                    .handler(new LoggingHandler())
+                    .handler(new LoggingHandler(LogLevel.INFO))
                     // 添加 Handler 处理器
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
