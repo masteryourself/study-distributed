@@ -1,4 +1,4 @@
-package pers.masteryourself.study.server.netty.codec;
+package pers.masteryourself.study.server.netty.unpacking;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -6,17 +6,16 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import pers.masteryourself.study.server.netty.simple.SimpleNettyClientHandler;
 
 /**
  * @author : masteryourself
  * @version : 1.0
  * blog : https://blog.csdn.net/masteryourself
  * Tel : 17621208646
- * Description : NettyCodecClient
+ * Description : NettyUnpackingClient
  * @date : 2020/2/18 15:31
  */
-public class NettyCodecClient {
+public class NettyUnpackingClient {
 
     public static void main(String[] args) throws Exception {
         NioEventLoopGroup group = new NioEventLoopGroup();
@@ -31,8 +30,9 @@ public class NettyCodecClient {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
                             socketChannel.pipeline()
-                                    .addLast(new IntToByteEncoder())
-                                    .addLast(new NettyCodecClientHandler());
+                                    .addLast(new MessageProtocolDecoder())
+                                    .addLast(new MessageProtocolEncoder())
+                                    .addLast(new NettyUnpackingClientHandler());
                         }
                     });
             System.out.println("客户端 ready ......");

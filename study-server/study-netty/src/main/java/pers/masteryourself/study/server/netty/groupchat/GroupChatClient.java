@@ -43,6 +43,8 @@ public class GroupChatClient {
             ChannelFuture channelFuture = bootstrap.connect("127.0.0.1", 7777).sync();
             Channel channel = channelFuture.channel();
             System.out.printf("******************** %s ********************\n", channel.localAddress().toString().substring(1));
+
+            // 设置交互
             Scanner scanner = new Scanner(System.in);
             while (scanner.hasNextLine()) {
                 String msg = scanner.nextLine();
