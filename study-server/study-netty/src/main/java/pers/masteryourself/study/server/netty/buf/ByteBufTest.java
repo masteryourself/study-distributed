@@ -61,4 +61,15 @@ public class ByteBufTest {
         System.out.println("buf 从下标为 6 的位置，读取 5 个字节：" + buf.getCharSequence(6, 5, CharsetUtil.UTF_8));
     }
 
+    @Test
+    public void testBufRead() {
+        ByteBuf buf = Unpooled.buffer(10);
+        buf.writeByte(0);
+        buf.writeByte(0);
+        buf.writeByte(0);
+        buf.writeByte('A');
+        // int 是4个字节，readInt 即一次性全部读完
+        System.out.println(buf.readInt());
+    }
+
 }
