@@ -2,20 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>study-search</artifactId>
+        <groupId>pers.masteryourself.study</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>pers.masteryourself.study</groupId>
-    <artifactId>study-distributed</artifactId>
+    <artifactId>study-elasticsearch</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-
     <modules>
-        <module>study-serializable</module>
-        <module>study-mq</module>
-        <module>study-rpc</module>
-        <module>study-db</module>
-        <module>study-server</module>
-        <module>study-search</module>
+        <module>study-elasticsearch-spring-boot</module>
     </modules>
+
 
 </project>
