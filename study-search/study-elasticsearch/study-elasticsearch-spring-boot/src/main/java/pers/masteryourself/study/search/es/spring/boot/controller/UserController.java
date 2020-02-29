@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @RequestMapping("/find")
-    public Optional<UserEntity> find(String id) {
+    public Optional<UserEntity> find(Long id) {
         return userRepository.findById(id);
     }
 

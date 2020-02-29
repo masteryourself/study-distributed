@@ -31,7 +31,7 @@ public class TestDataController {
         Random random = new Random();
         for (int i = 0; i < 100; i++) {
             UserEntity user = new UserEntity();
-            user.setId(String.valueOf(i));
+            user.setId((long) i);
             user.setAge(age[random.nextInt(10)]);
             user.setName(UUID.randomUUID().toString().substring(0, 5));
             user.setSex(i / 2);

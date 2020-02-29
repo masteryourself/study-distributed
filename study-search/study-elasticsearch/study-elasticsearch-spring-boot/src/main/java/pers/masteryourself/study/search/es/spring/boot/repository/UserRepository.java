@@ -11,5 +11,5 @@ import pers.masteryourself.study.search.es.spring.boot.entity.UserEntity;
  * Description : UserRepository
  * @date : 2020/2/29 1:56
  */
-public interface UserRepository extends CrudRepository<UserEntity, String> {
+public interface UserRepository extends CrudRepository<UserEntity, Long> {
 }

@@ -17,7 +17,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class UserEntity {
 
     @Id
-    private String id;
+    private Long id;
 
     private String name;
 
