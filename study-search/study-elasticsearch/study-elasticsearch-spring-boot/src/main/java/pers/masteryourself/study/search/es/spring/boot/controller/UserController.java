@@ -18,18 +18,19 @@ import java.util.Optional;
  * @date : 2020/2/29 2:04
  */
 @RestController
+@RequestMapping(value = "user")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping("/addUser")
-    public UserEntity addUser(@RequestBody UserEntity user) {
+    @RequestMapping("/add")
+    public UserEntity add(@RequestBody UserEntity user) {
         return userRepository.save(user);
     }
 
-    @RequestMapping("/findUser")
-    public Optional<UserEntity> findUser(String id) {
+    @RequestMapping("/find")
+    public Optional<UserEntity> find(String id) {
         return userRepository.findById(id);
     }
 
