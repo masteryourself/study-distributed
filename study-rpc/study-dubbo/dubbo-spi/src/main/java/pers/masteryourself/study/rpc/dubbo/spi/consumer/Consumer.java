@@ -6,11 +6,12 @@ import pers.masteryourself.study.rpc.dubbo.spi.api.DemoService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : Consumer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
+ * @version : 1.0.0
  * @date : 2019/12/8 1:54
  */
 public class Consumer {

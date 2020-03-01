@@ -5,14 +5,15 @@ import org.apache.dubbo.common.extension.Activate;
 import org.apache.dubbo.rpc.*;
 
 /**
+ * <p>description : TimeSpendProviderFilter，
+ * {@link Activate} group = CommonConstants.PROVIDER_SIDE 表示在 provider 端激活
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 统计 dubbo 调用耗时的 filter，在 provider 端才会生效
- * @date : 2020/1/1 10:07
+ * @version : 1.0.0
+ * @date : 2019/12/8 1:54
  */
-// 在 provider 端激活
 @Activate(group = CommonConstants.PROVIDER_SIDE)
 public class TimeSpendProviderFilter implements Filter {
 

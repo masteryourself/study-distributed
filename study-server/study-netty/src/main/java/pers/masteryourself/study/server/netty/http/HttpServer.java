@@ -7,12 +7,13 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
+ * <p>description : HttpServer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : HttpServer
- * @date : 2020/2/16 11:15
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:16
  */
 public class HttpServer {
 

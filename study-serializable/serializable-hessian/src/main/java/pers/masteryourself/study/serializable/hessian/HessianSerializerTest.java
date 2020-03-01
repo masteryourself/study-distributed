@@ -1,21 +1,21 @@
-package pers.masteryourself.study.serializable.protobuf;
+package pers.masteryourself.study.serializable.hessian;
 
 import org.junit.Test;
 
-
 /**
+ * <p>description : HessianSerializerTest
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2020/1/4 14:46
+ * @version : 1.0.0
+ * @date : 2020/1/4 15:07
  */
-public class ProtobufSerializerTest {
+public class HessianSerializerTest {
 
     @Test
     public void testXmlSerializer() throws Exception {
-        ProtobufSerializer serializer = new ProtobufSerializer();
+        HessianSerializer serializer = new HessianSerializer();
         User user = new User();
         user.setId(998L);
         user.setName("masteryourself");

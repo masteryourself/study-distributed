@@ -7,12 +7,13 @@ import pers.masteryourself.study.rpc.dubbo.v265.api.DemoService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : DemoServiceImpl
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2019/12/8 1:35
+ * @version : 1.0.0
+ * @date : 2019/12/8 1:36
  */
 public class DemoServiceImpl implements DemoService {
 

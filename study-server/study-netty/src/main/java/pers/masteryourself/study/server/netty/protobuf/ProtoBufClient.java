@@ -9,11 +9,12 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 
 /**
+ * <p>description : ProtoBufClient
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : ProtoBufClient
+ * @version : 1.0.0
  * @date : 2020/2/17 13:41
  */
 public class ProtoBufClient {

@@ -5,11 +5,12 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 import javax.jms.*;
 
 /**
+ * <p>description : QueueProducer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
+ * @version : 1.0.0
  * @date : 2020/1/10 14:24
  */
 public class QueueProducer {
@@ -30,7 +31,7 @@ public class QueueProducer {
         //创建 JMS consumer，或者是注册一个 JMS message listener
         TextMessage message = session.createTextMessage("hello,activemq");
         // 添加消息属性
-        message.setStringProperty("custom-message","自定义的消息属性");
+        message.setStringProperty("custom-message", "自定义的消息属性");
         //发送 JMS message
         producer.send(message);
         //提交事务，对于 provider 来说，即消息被发送到 activeMQ 上

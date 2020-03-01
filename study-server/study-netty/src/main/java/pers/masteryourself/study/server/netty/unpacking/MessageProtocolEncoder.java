@@ -5,12 +5,13 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToByteEncoder;
 
 /**
+ * <p>description : MessageProtocolEncoder
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : MessageProtocolEncoder
- * @date : 2020/2/18 23:30
+ * @version : 1.0.0
+ * @date : 2020/2/18 23:20
  */
 public class MessageProtocolEncoder extends MessageToByteEncoder<MessageProtocol> {
 

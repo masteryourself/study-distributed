@@ -7,12 +7,13 @@ import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import java.time.LocalDateTime;
 
 /**
+ * <p>description : WebSocketServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2020/2/16 21:09
+ * @version : 1.0.0
+ * @date : 2020/2/16 1:08
  */
 public class WebSocketServerHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
 

@@ -8,11 +8,12 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
+ * <p>description : SimpleNettyClientHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : SimpleNettyClientHandler
+ * @version : 1.0.0
  * @date : 2020/2/16 1:08
  */
 public class SimpleNettyClientHandler extends ChannelInboundHandlerAdapter {

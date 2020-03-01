@@ -8,11 +8,12 @@ import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 /**
+ * <p>description : GroupChatServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : GroupChatServerHandler
+ * @version : 1.0.0
  * @date : 2020/2/16 16:54
  */
 public class GroupChatServerHandler extends SimpleChannelInboundHandler<String> {

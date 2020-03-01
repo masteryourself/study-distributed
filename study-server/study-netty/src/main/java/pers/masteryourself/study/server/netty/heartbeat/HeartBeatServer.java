@@ -14,12 +14,13 @@ import io.netty.handler.timeout.IdleStateHandler;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : HeartBeatServer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : HeartBeatServer
- * @date : 2020/2/16 20:37
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:08
  */
 public class HeartBeatServer {
 

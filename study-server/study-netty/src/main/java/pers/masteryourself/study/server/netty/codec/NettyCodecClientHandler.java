@@ -8,12 +8,13 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : NettyCodecClientHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyCodecClientHandler
- * @date : 2020/2/18 15:49
+ * @version : 1.0.0
+ * @date : 2020/2/18 15:32
  */
 public class NettyCodecClientHandler extends ChannelInboundHandlerAdapter {
 

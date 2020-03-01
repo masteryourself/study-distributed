@@ -8,11 +8,12 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
+ * <p>description : NettyTaskClient
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyTaskClient
+ * @version : 1.0.0
  * @date : 2020/2/16 11:59
  */
 public class NettyTaskClient {

@@ -5,11 +5,12 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 /**
+ * <p>description : HttpChannelInitializer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : HttpChannelInitializer
+ * @version : 1.0.0
  * @date : 2020/2/16 11:16
  */
 public class HttpChannelInitializer extends ChannelInitializer<SocketChannel> {

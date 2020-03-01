@@ -10,11 +10,12 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
+ * <p>description : SimpleNettyServer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : SimpleNettyServer
+ * @version : 1.0.0
  * @date : 2020/2/16 1:08
  */
 public class SimpleNettyServer {

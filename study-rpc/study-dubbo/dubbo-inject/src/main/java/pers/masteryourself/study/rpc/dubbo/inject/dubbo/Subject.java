@@ -5,14 +5,14 @@ import org.apache.dubbo.common.extension.Adaptive;
 import org.apache.dubbo.common.extension.SPI;
 
 /**
+ * <p>description : Subject，默认使用 math
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
+ * @version : 1.0.0
  * @date : 2020/1/1 11:09
  */
-// 默认使用 math
 @SPI("math")
 public interface Subject {
 

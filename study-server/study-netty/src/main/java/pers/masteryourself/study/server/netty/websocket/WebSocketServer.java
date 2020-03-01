@@ -13,11 +13,12 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.stream.ChunkedWriteHandler;
 
 /**
+ * <p>description : WebSocketServer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : WebSocketServer
+ * @version : 1.0.0
  * @date : 2020/2/16 1:08
  */
 public class WebSocketServer {

@@ -9,12 +9,13 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
+ * <p>description : NettyCodecServer
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyCodecServer
- * @date : 2020/2/18 15:31
+ * @version : 1.0.0
+ * @date : 2020/2/18 15:32
  */
 public class NettyCodecServer {
 

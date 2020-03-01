@@ -7,12 +7,13 @@ import io.netty.handler.timeout.IdleStateEvent;
 import java.time.LocalDateTime;
 
 /**
+ * <p>description : HeartBeatServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : HeartBeatServerHandler
- * @date : 2020/2/16 20:37
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:08
  */
 public class HeartBeatServerHandler extends ChannelInboundHandlerAdapter {
 

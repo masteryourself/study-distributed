@@ -4,11 +4,12 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 /**
+ * <p>description : ProtoBufServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : ProtoBufServerHandler
+ * @version : 1.0.0
  * @date : 2020/2/17 13:41
  */
 public class ProtoBufServerHandler extends SimpleChannelInboundHandler<StudentManage.Student> {

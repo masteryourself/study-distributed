@@ -7,12 +7,13 @@ import pers.masteryourself.study.rpc.dubbo.inject.dubbo.Subject;
 import pers.masteryourself.study.rpc.dubbo.inject.spring.SpringBean;
 
 /**
+ * <p>description : AutoInjectFilter
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 自动注入的测试 filter
- * @date : 2020/1/1 10:07
+ * @version : 1.0.0
+ * @date : 2020/1/1 11:09
  */
 @Activate(group = CommonConstants.PROVIDER_SIDE)
 public class AutoInjectFilter implements Filter {

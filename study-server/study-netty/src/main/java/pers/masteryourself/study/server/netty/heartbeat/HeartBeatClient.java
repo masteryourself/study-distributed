@@ -9,12 +9,13 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringEncoder;
 
 /**
+ * <p>description : HeartBeatClient
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : HeartBeatClient
- * @date : 2020/2/16 1:08
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:08
  */
 public class HeartBeatClient {
 

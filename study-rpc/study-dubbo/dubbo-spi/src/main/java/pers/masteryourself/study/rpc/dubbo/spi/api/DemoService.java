@@ -1,12 +1,13 @@
 package pers.masteryourself.study.rpc.dubbo.spi.api;
 
 /**
+ * <p>description : DemoService
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2019/12/8 1:36
+ * @version : 1.0.0
+ * @date : 2019/12/8 1:54
  */
 public interface DemoService {
 

@@ -8,12 +8,13 @@ import org.apache.dubbo.rpc.Protocol;
 import org.apache.dubbo.rpc.RpcException;
 
 /**
+ * <p>description : RegistryProtocolWrapper
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2020/1/1 10:45
+ * @version : 1.0.0
+ * @date : 2019/12/8 1:36
  */
 public class RegistryProtocolWrapper implements Protocol {
 

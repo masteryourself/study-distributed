@@ -7,12 +7,13 @@ import io.netty.handler.codec.ReplayingDecoder;
 import java.util.List;
 
 /**
+ * <p>description : MessageProtocolDecoder
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : MessageProtocolDecoder
- * @date : 2020/2/18 23:24
+ * @version : 1.0.0
+ * @date : 2020/2/18 23:20
  */
 public class MessageProtocolDecoder extends ReplayingDecoder<Void> {
 

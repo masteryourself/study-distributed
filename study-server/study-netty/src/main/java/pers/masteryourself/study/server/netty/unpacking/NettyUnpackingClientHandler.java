@@ -5,12 +5,13 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
 /**
+ * <p>description : NettyUnpackingClientHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyUnpackingClientHandler
- * @date : 2020/2/18 15:49
+ * @version : 1.0.0
+ * @date : 2020/2/18 23:20
  */
 public class NettyUnpackingClientHandler extends ChannelInboundHandlerAdapter {
 

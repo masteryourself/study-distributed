@@ -7,12 +7,13 @@ import io.netty.util.CharsetUtil;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * <p>description : NettyUnpackingServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyUnpackingServerHandler
- * @date : 2020/2/18 15:31
+ * @version : 1.0.0
+ * @date : 2020/2/18 23:20
  */
 public class NettyUnpackingServerHandler extends SimpleChannelInboundHandler<MessageProtocol> {
 

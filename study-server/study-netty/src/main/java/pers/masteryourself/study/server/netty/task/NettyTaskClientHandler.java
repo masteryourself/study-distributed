@@ -10,12 +10,13 @@ import io.netty.util.CharsetUtil;
 import java.util.Date;
 
 /**
+ * <p>description : NettyTaskClientHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : NettyTaskClientHandler
- * @date : 2020/2/16 1:08
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:59
  */
 public class NettyTaskClientHandler extends ChannelInboundHandlerAdapter {
 

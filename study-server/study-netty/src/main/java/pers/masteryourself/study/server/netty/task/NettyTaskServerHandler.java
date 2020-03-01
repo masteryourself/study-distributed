@@ -15,12 +15,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * <p>description : NettyTaskServerHandler
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : handler 处理器
- * @date : 2020/2/16 1:08
+ * @version : 1.0.0
+ * @date : 2020/2/16 11:59
  */
 public class NettyTaskServerHandler extends ChannelInboundHandlerAdapter {
 

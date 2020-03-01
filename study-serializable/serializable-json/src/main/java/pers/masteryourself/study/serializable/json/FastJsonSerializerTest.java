@@ -1,30 +1,28 @@
-package pers.masteryourself.study.serializable.xml;
+package pers.masteryourself.study.serializable.json;
 
 import org.junit.Test;
 
 /**
+ * <p>description : FastJsonSerializerTest
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
- * @version : 1.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 描述
- * @date : 2020/1/4 13:58
+ * @version : 1.0.0
+ * @date : 2020/1/4 14:08
  */
-public class XmlSerializerTest {
+public class FastJsonSerializerTest {
 
     @Test
     public void testXmlSerializer() throws Exception {
-        XmlSerializer serializer = new XmlSerializer();
+        FastJsonSerializer serializer = new FastJsonSerializer();
         User user = new User();
         user.setId(998L);
         user.setName("masteryourself");
         user.setAge(18);
         byte[] data = serializer.serialize(user);
         user.num = 10;
-        // <pers.masteryourself.study.distributed.serializable.xml.User>
-        // <id>998</id>
-        // <name>masteryourself</name>
-        // </pers.masteryourself.study.distributed.serializable.xml.User>
+        // {"id":998,"name":"masteryourself"}
         System.out.println(new String(data));
         User deserializeUer = serializer.deserialize(data, User.class);
         // User(id=998, name=masteryourself, age=0)

@@ -10,12 +10,13 @@ import java.util.Random;
 import java.util.UUID;
 
 /**
+ * <p>description : TestDataController, 测试数据
+ *
+ * <p>blog : https://Blog.csdn.net/masteryourself
+ *
  * @author : masteryourself
  * @version : 1.0.0
- * blog : https://blog.csdn.net/masteryourself
- * Tel : 17621208646
- * Description : 测试数据
- * @date : 2020/2/29 2:22
+ * @date : 2020/2/29 2:04
  */
 @RestController
 @RequestMapping(value = "test")
